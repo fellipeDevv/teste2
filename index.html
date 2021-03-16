@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="boton.jsx"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Frypdogs</title>
+</head>
+
+<body>
+
+    <div class="topnav" id="opa" style="align-items: baseline;">
+        <a href="index.html">
+            <img src="fripp1.PNG" alt="" width="150px" height="70px" style="margin-right: 0px;">
+        </a>
+        <div class="tec"><a class="active" href="index.html">Home</a>
+            <a href="EnvioDeReceita.html">Envio de receita</a>
+            <div class="dropdown">
+                <button class="dropbtn">Categorias
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                    <a href="#emagrecer">Emagrecimento</a>
+                    <a href="#ganho">Suplementos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Contatos
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                    <a href="#Contatos">Contatos</a>
+                    <a href="http://www.embuscadofullstack.tk/suporte.html">Suporte</a>
+                </div>
+
+            </div>
+        </div>
+        <div style="float: right;margin-right: 2%;margin-top: 0%;">
+            <a class="ht" style="display: none;position: absolute; margin-top: 52px;margin-right: 100px;">login:<textarea name="login" id="" cols="10" rows="1"></textarea><br>
+                senha:<textarea name="senha" id="" cols="10" rows="1"></textarea><button style="width: 100%;background-color: black;color: chartreuse;">confirmar</button></a>
+            <a class="btn1" onclick="login()">login</a>
+
+            <a class="btn2" onclick="pass()">cadastre-se</a>
+        </div>
+    </div>
+
+    <section class="section">
+        <br><img src="LogoSample_ByTailorBrands (2).jpg" alt=""><br>
+    </section>
+    <section class="section1">
+        <br> <img src="LogoSample_ByTailorBrands (1).jpg" alt=""><br>
+    </section>
+    <section class="section">
+        <br><img src="LogoSample_ByTailorBrands (3).jpg" alt=""><br>
+    </section>
+</body>
+
+</html>
+<footer>
+    <a name="Contatos" id="cont"></a>
+    <div class="main-content">
+        <div class="left box">
+            <h2>
+                Redes social</h2>
+            <div class="content">
+                <p>
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/pg/pradel.manipulacao/about/?ref=page_internal
+            "><span class="fab fa-facebook-f"></span></a>
+
+                    <a href="https://www.instagram.com/farmaciapradel/
+            "><span class="fab fa-instagram"></span></a>
+
+                    <a href="https://www.reclameaqui.com.br/empresa/farmacia-pradel/
+            "><span class="fas fa-warning"></span></a>
+
+                    <h2>formas de pagamento</h2>
+                    <div class="content"></div>
+                    <img src="Bandeiras.png"></img>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>
+                Unidades</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Isai+Leiner,+11+-+Jardim+Bonfiglioli,+S%C3%A3o+Paulo+-+SP,+05592-140/@-23.5780547,-46.7435023,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce567a4d521ba7:0x920cfc7e24aa5a8f!8m2!3d-23.5780596!4d-46.7413136?hl=pt-BR&authuser=0">
+                        <span class="fas fa-map-marker-alt"></span></a>
+                    <span class="text">Pç Isai Leiner, 11, Jd Bonfiglioli, São Paulo<br>SP, 05592-140
+                    </span>
+                </div>
+
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> (11) 3731-2130 <a href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20fazer%20um%20orçamento!"> <span class="fas fa-phone-alt"></span></a>(11)
+                    98863-7547
+
+                    </span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">manipulacaopradel@uol.com.br          
+          </span>
+                    <br>
+                    <span class="text">SAC: e-mail: carla.farmaciapradel@hotmail.com</span>
+                    <br><br>
+                    <p style="font-size: 12px;">&copy; 2020 www.embuscadofullstack.tk
+                        <p>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>
+                Contate-nos</h2>
+            <div class="content">
+                <form action="EnviarEmail.php" method="post">
+                    <div class="email">
+                        <div class="text">
+                            Email *</div>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="msg">
+                        <div class="text">
+                            Message *</div>
+                        <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                        <textarea class="msgForm" name="msgForm" style="width: 100%; background-color: #151515; font-size: 1.0625rem;" id="msgForm" rows="2" cols="25"></textarea>
+                        <!-- replace this changeit name to textarea -->
+
+                        <br />
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
